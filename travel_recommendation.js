@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         data.countries.forEach(country => {
           country.cities.forEach(city => {
-            places.push({ type: 'city', parent: country.name, ...city });
+            places.push({ type: 'city', pais: country.name, ...city });
           });
         });
         data.temples.forEach(t => places.push({ type: 'temple', ...t }));
@@ -97,7 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
           results = places.filter(p => p.type === 'temple');
         }
         else if (countryKeys.includes(query)) {
-          results = places.filter(p => p.parent.toLowerCase() === query);
+          console.log(places);
+          results = places.filter(p => p.pais?.toLowerCase() === query);
         }
         else {
           // fallback: name contains
