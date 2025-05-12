@@ -1,0 +1,140 @@
+/* Reset and base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  /* Navbar styling */
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 10px 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo::before {
+    content: '✈️';
+    font-size: 1.8rem;
+    margin-right: 8px;
+  }
+  
+  #links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #destination_search_form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+    gap: 10px;
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  #destination_search_form input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #004d4d;
+  }
+  
+  #destination_search_form button {
+    background-color: #006666;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Main content styling */
+  #main-content {
+    background: url('https://wallpapers.com/images/high/monterrey-cityscape-at-night-ugzzjybbpfqjocai.webp') no-repeat center center/cover;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+  }
+  
+  /* Social sidebar */
+  #social-sidebar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #social-sidebar a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+  }
+  
+  /* Hero Text */
+  #hero-text {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  #hero-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  #hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Book Now Button */
+  #book_now_button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #book_now_button:hover {
+    background-color: #006666;
+  }

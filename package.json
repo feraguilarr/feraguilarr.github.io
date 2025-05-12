@@ -1,0 +1,23 @@
+{
+  "name": "travelrecommendation",
+  "version": "1.0.0",
+  "main": "travel_recommendation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx live-server"
+  },
+  "author": "Fer Aguilar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feraguilarr/travelRecommendation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feraguilarr/travelRecommendation/issues"
+  },
+  "homepage": "https://github.com/feraguilarr/travelRecommendation#readme",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
