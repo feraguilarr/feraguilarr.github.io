@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0,0,0,0.8);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     padding: 10px 30px;
     position: relative;
     z-index: 2;
