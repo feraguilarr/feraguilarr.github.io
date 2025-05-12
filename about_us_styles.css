@@ -1,0 +1,140 @@
+/* Common and layout styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: url('https://wallpapers.com/images/high/monterrey-cityscape-at-night-ugzzjybbpfqjocai.webp') no-repeat center center/cover;
+  }
+  
+  /* Navbar styles */
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+  }
+  
+  #logo::before {
+    content: '✈️';
+    font-size: 1.8rem;
+    margin-right: 8px;
+  }
+  
+  #links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Main layout */
+  #main-content {
+    position: relative;
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-top: 40px;
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+  }
+  
+  /* Social sidebar */
+  #social-sidebar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+  }
+  
+  #social-sidebar a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+  }
+  
+  /* About section */
+  #about-section h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 900px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Team section */
+  .team-section {
+    margin-top: 40px;
+  }
+  
+  .team-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .team-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .team-avatar {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .team-role-desc {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-position {
+    background-color: #3344cc;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+  }

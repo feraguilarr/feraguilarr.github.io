@@ -1,0 +1,114 @@
+/* reset & base */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background:
+      url('https://wallpapers.com/images/high/monterrey-cityscape-at-night-ugzzjybbpfqjocai.webp')
+      no-repeat center/cover;
+  }
+  
+  /* navbar */
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.8);
+    padding: 10px 30px;
+    position: relative;
+    z-index: 2;
+  }
+  #logo {
+    font-size: 1.5rem; font-weight: bold; font-style: italic;
+    display: flex; align-items: center;
+  }
+  #logo::before {
+    content: '✈️'; font-size: 1.8rem; margin-right: 8px;
+  }
+  #links { display: flex; gap: 30px; }
+  #links a {
+    color: white; text-decoration: none; font-weight: 500;
+  }
+  
+  /* main layout */
+  #main-content {
+    position: relative;
+    height: calc(100vh - 60px);
+    padding: 40px;
+  }
+  #content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  
+  /* social sidebar */
+  #social-sidebar {
+    position: absolute;
+    left: 20px; top: 50%;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 20px;
+    z-index: 2;
+  }
+  #social-sidebar img {
+    width: 24px; height: 24px;
+    filter: invert(1);
+  }
+  
+  /* hero text */
+  #hero-text {
+    flex: 1;
+  }
+  #hero-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  #hero-text p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* contact form */
+  #contact-form {
+    flex: 1;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  #contact-form input::placeholder,
+  #contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.8);
+  }
+  #contact-form button {
+    width: 100%;
+    background-color: #008080;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  #contact-form button:hover {
+    background-color: #006666;
+  }
